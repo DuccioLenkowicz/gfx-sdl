@@ -1,0 +1,1 @@
+clang -o test.exe ./src/*.c ./tests/gfx_test.c -I./include -I./SDL2-2.0.7/include -L./SDL2-2.0.7/lib/x64 -lSDL2
