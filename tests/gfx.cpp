@@ -34,7 +34,7 @@ struct gfx_safe
         SDL_Renderer *renderer = SDL_CreateRenderer(gfx_ptr->window, -1, 0);
 
         if (!renderer)
-            delete gfx_ptr;;
+            delete gfx_ptr;
 
         gfx_ptr->renderer = renderer;
     }
