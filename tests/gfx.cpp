@@ -47,14 +47,20 @@ gfx_safe::gfx_safe()
         0);
 
     if (!window)
+    {
         delete gfx_ptr;
+        return;
+    }
 
     gfx_ptr->window = window;
 
     SDL_Renderer *renderer = SDL_CreateRenderer(gfx_ptr->window, -1, 0);
 
     if (!renderer)
+    {
         delete gfx_ptr;
+        return;
+    }
 
     gfx_ptr->renderer = renderer;
 }
